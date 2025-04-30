@@ -15,15 +15,39 @@
             Itapemirim - ES
         </title>
 
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-MRSLP8B9');</script>
-        <!-- End Google Tag Manager -->
+        <!-- Google Analytics 4 - Carregamento imediato e leve -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2EG4R6W99"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-W2EG4R6W99');
+        </script>
 
 
+        <!-- Google Tag Manager - Carregamento sob demanda -->
+        <script>
+            function carregarGTM() {
+            if (window.gtmJaCarregado) return;
+            window.gtmJaCarregado = true;
+        
+            (function(w,d,s,l,i){
+                w[l]=w[l]||[];
+                w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),
+                    dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;
+                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MRSLP8B9');
+            }
+        
+            window.addEventListener('scroll', carregarGTM, { once: true });
+            window.addEventListener('click', carregarGTM, { once: true });
+        </script>
+        <!-- Fim do GTM sob demanda -->
+        
         <meta
             name="description"
             content="JR Montagem de Móveis - Montagem e desmontagem de móveis, instalação de suporte para TV, troca de corrediças e dobradiças em Cachoeiro de Itapemirim - ES. Serviços rápidos e profissionais."
